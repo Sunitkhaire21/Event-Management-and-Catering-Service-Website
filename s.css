@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    padding: 60px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #f1bc0d;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.link a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+}
+
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+
+@media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+*{margin: 0; padding: 0;}
+
+.centerdiv{
+    height: 10vh;
+    display: inline-flex;
+    
+}
+
+.centerdiv .edit{
+    margin: 0 20px;
+}
+
+.centerdiv .edit {
+    height: 60px;
+    width: 60px;
+    display: block;
+    background-color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    margin: 2px;
+    line-height: 70px;
+    /* box-shadow: 1px 4px 2px 2px #dcdde1; */
+    /* box-shadow: 0 10px 10px rgb(0, 0, 0,0.1); */
+}
+
+a i {
+    transition: all 0.3s linear;
+}
+
+a:hover i{
+    transform: scale(1.4);
+}
+
+.fa-instagram{
+    color: #e84393;
+}
+.fa-youtube{
+    color: #e84118;
+}
+.fa-twitter{
+    color: #0097e6;
+}
+.fa-pinterest{
+    color: #e84118;
+}
+.fa-snapchat{
+    color: #f7ff06;
+}
